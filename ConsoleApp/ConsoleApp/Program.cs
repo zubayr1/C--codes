@@ -10,27 +10,33 @@ namespace ConsoleApp
     {
         public static void Main(string[] args)
         {
-            int[,] mat = { { 1, 2, 3 }, { 4, 5, 6 } };
 
+            LinkedList linkedList = new LinkedList();
+            linkedList.addNode(00);
+            linkedList.addNode(10);
+            linkedList.addNode(20);
+            linkedList.addNode(30);
+            linkedList.addNode(40);
+            linkedList.addNode(50);
+            linkedList.addNode(60);
 
-            TranMat tranMat = new TranMat();
+            Console.WriteLine("Linked List elements:");
+            linkedList.displayList();
 
-            var val = tranMat.TransposeMatrix(mat);
+            /*int removedinit = linkedList.removeNode(0);
 
-            
+            Console.WriteLine($"removed {removedinit}");*/
 
-            var row1 = val.GetLength(0);
-            var col1 = val.GetLength(1);
+            /*int removed = linkedList.removeNode(5);
 
-            for (int i = 0; i < row1; i++)
-            {
-                for (int j = 0; j < col1; j++)
-                {
-                    Console.WriteLine(val[i, j]);
-                }
-            }
+            Console.WriteLine($"removed {removed}");
 
+            Console.WriteLine("Linked List elements:");
+            linkedList.displayList();*/
         }
+
+
     }
+    
 
 }
